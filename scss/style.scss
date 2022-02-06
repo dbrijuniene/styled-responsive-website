@@ -11,8 +11,11 @@
 @import "contacts.scss";
 @import "footer.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: montserrat;
   margin: 0 auto;
 }
-
