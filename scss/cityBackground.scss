@@ -3,12 +3,11 @@
     box-shadow: inset 0px 0px 600px 610px rgba(0.2, 0.2, 0.2, 0.5);
     color: $whiteLetters;
     background-size: cover;
-    background-position:center;
+    background-position: center;
     justify-content: center;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 750px;
 
     .textPart {
         margin-left: 150px;
@@ -16,7 +15,6 @@
         img {
             width: 250px;
             height: 110px;
-            
         }
 
         h1 {
@@ -56,8 +54,8 @@
         justify-content: center;
 
         form {
-            // margin-top: 147px;
-            // margin-bottom: 139px;
+            margin-top: 147px;
+            margin-bottom: 139px;
             width: 360px;
             background: white;
             color: $blackLetters;
@@ -127,29 +125,41 @@
         }
     }
 
-   
-    @media (max-width:700px) {
-      display:block;
-      justify-content: center;
-      text-align: center;
-      padding-top: 50px;
-      
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
 
-    
+        .textPart {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0px;
 
-      .textPart {
-    margin-left: 0;
+            img {
+                margin-top: 100px;
+            }
 
-    h1 {
-        width: 390px;
-    }
+            h1 {
+                text-align: center;
+                width: fit-content;
+            }
 
-       p {
-           width: 390px;
-           text-align: center;
-           margin-right: 0;
-       }
-    }
+            p {
+                text-align: center;
+                margin: 0 20px;
+                width: fit-content;
+            }
 
+            button {
+                margin-top: 30px;
+            }
+        }
+
+        .formStyle {
+            form {
+                margin-top: 35px;
+            }
+        }
     }
 }
