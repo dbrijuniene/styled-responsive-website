@@ -1,0 +1,155 @@
+.cityBackground {
+    background-image: url(/pictures/firstSectionBackground.png);
+    box-shadow: inset 0px 0px 600px 610px rgba(0.2, 0.2, 0.2, 0.5);
+    color: $whiteLetters;
+    background-size: cover;
+    background-position:center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 750px;
+
+    .textPart {
+        margin-left: 150px;
+
+        img {
+            width: 250px;
+            height: 110px;
+            
+        }
+
+        h1 {
+            font-size: $titleSize;
+            width: 660px;
+        }
+
+        hr {
+            width: 10%;
+            height: 2px;
+            background: white;
+            border: none;
+            float: left;
+        }
+
+        p {
+            width: 660px;
+            line-height: 1.5rem;
+            font-weight: bold;
+            text-align: left;
+            color: $whiteLetters;
+        }
+
+        button {
+            background: none;
+            color: $whiteLetters;
+            font-weight: bold;
+            border: 2px solid white;
+            padding: 10px;
+            margin-top: 10px;
+            width: 150px;
+        }
+    }
+
+    .formStyle {
+        display: flex;
+        justify-content: center;
+
+        form {
+            // margin-top: 147px;
+            // margin-bottom: 139px;
+            width: 360px;
+            background: white;
+            color: $blackLetters;
+            border-radius: 6px;
+        }
+
+        #name,
+        #lastName,
+        #number {
+            width: 240px;
+            margin-left: 50px;
+            font-size: 0.75rem;
+        }
+
+        #number {
+            margin-bottom: 0;
+        }
+
+        .formHeader {
+            font-size: $smallerTitle;
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+            border-radius: 6px 6px 0 0;
+
+            span {
+                color: $samePink;
+            }
+        }
+
+        h3 {
+            font-size: 1rem;
+            color: $blackLetters;
+            font-weight: bold;
+            text-align: left;
+            margin-left: 50px;
+            padding-top: 10px;
+        }
+
+        input {
+            border: 0;
+            border-bottom: 1px solid #00000029;
+            padding: 10px 10px 10px 0px;
+            margin-bottom: 20px;
+            opacity: 0.4;
+        }
+
+        .radioButton {
+            text-align: left;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            margin-top: 0;
+            font-size: 0.6rem;
+            font-weight: bold;
+        }
+
+        .formButton {
+            background: $sameGreen;
+            color: $whiteLetters;
+            border: none;
+            font-size: 1.2rem;
+            width: 100%;
+            font-weight: normal;
+            padding: 20px;
+            border-radius: 0 0 6px 6px;
+        }
+    }
+
+   
+    @media (max-width:700px) {
+      display:block;
+      justify-content: center;
+      text-align: center;
+      padding-top: 50px;
+      
+
+    
+
+      .textPart {
+    margin-left: 0;
+
+    h1 {
+        width: 390px;
+    }
+
+       p {
+           width: 390px;
+           text-align: center;
+           margin-right: 0;
+       }
+    }
+
+    }
+}

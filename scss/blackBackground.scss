@@ -1,0 +1,72 @@
+.blackBackground {
+    background-color: #1c1c1c;
+    height: 596px;
+    color: $whiteLetters;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .bigLogo {
+        width: 389px;
+        height: 169px;
+    }
+
+    .textPart {
+        padding-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+        width: 350px;
+    }
+
+    h3 {
+        font-size: $textSize;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: $textSize;
+        width: 500px;
+        line-height: $sameLineHeight;
+        font-weight: normal;
+    }
+
+    hr {
+        width: 200px;
+        height: 2px;
+        border: none;
+        background: $samePink;
+        float: left;
+    }
+
+    i {
+        font-size: 25px;
+        background: $samePink;
+        color: $whiteLetters;
+        border-radius: 100%;
+        padding: 15px;
+        // float: left;
+        margin-right: 20px;
+    }
+
+    @media (max-width: 763px) {
+        display: block;
+        height: 760px;
+        padding-left: 95px;
+
+        .bigLogo {
+            padding-top: 40px;
+            width: 300px;
+            height: 120px;
+        }
+
+        i {
+            margin-bottom: 70px;
+        }
+
+        p {
+            width: 320px;
+        }
+    }
+}

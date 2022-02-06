@@ -1,1 +1,1 @@
-alert("Veikia");
+'use strict';

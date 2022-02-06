@@ -1,0 +1,58 @@
+.mountainsBackground, #overlay {
+    background-image: url(/pictures/mountains.png);
+    color: $whiteLetters;
+    background-size: cover;
+    background-position: center;
+    height: 595px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #overlay {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right bottom, #e27866, #6696e2);
+        opacity: 0.42;
+    }
+
+    .textPart {
+        width: 520px;
+        margin: 50px;
+        position: relative;
+        h1 {
+            font-size: $titleSize;
+        }
+        p {
+            font-size: $textSize;
+            line-height: $sameLineHeight;
+            text-align: left;
+            color: $whiteLetters;
+        }
+    }
+    .tabButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9rem;
+        width: 110px;
+        height: 110px;
+        margin: 15px;
+        border: none;
+        background-color: $samePink;
+
+        #tabDarkerColor {
+            background: red;
+        }
+        span {
+            color: $whiteLetters;
+            transform: rotate(-50deg);
+        }
+    }
+
+    img {
+        width: 200px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
