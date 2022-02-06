@@ -1,3 +1,36 @@
+@mixin hoverImage($backgroundUrl, $width: 168px) {
+    height: 168px;
+    width: $width;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+
+    & > span {
+        font: normal normal 600 20px/24px Montserrat;
+        letter-spacing: 0px;
+    }
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url($backgroundUrl), no-repeat;
+        background-position: center;
+    }
+
+    &:hover {
+        background-color: rgb(226, 120, 102);
+        &::after {
+            opacity: 0.2;
+        }
+    }
+}
+
 .mountainsBackground {
     background-image: url(/pictures/mountains.png),
         linear-gradient(to right bottom, rgba(226, 120, 102, 0.47), rgba(102, 150, 226, 0.47));
@@ -13,6 +46,9 @@
     .gridContainer {
         display: flex;
         flex-direction: column;
+        & > div {
+            display: flex;
+        }
     }
 
     .textPart {
@@ -52,9 +88,18 @@
         }
     }
 
-    img {
-        width: 168px;
+    .cabbageImage {
+        @include hoverImage("/pictures/cabbage.png");
     }
+
+    .vegetablesImage {
+        @include hoverImage("/pictures/vegetables.png");
+    }
+
+    .stairsImage {
+        @include hoverImage("/pictures/stairs.png", 360px);
+    }
+
     .large {
         width: 342px;
     }
