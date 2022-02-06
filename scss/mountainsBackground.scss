@@ -9,7 +9,7 @@
     margin: 10px;
 
     & > span {
-        font: normal normal 600 20px/24px Montserrat;
+        font-size: $smallerTitle;
         letter-spacing: 0px;
     }
 
@@ -117,6 +117,9 @@
              h1 {
                  margin-top: 0px;
              }
+         }
+         .gridContainer {
+             margin-bottom: 40px;
          }
      }
 }
