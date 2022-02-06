@@ -24,6 +24,7 @@
     }
 
     &:hover {
+        cursor: pointer;
         background-color: rgb(226, 120, 102);
         &::after {
             opacity: 0.2;
