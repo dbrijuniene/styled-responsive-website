@@ -33,7 +33,7 @@
 }
 
 .mountainsBackground {
-    background-image: url(/pictures/mountains.png),
+    background-image: url(pictures/mountains.png),
         linear-gradient(to right bottom, rgba(226, 120, 102, 0.47), rgba(102, 150, 226, 0.47));
     background-repeat: no-repeat;
     color: $whiteLetters;
@@ -90,36 +90,36 @@
     }
 
     .cabbageImage {
-        @include hoverImage("/pictures/cabbage.png");
+        @include hoverImage("pictures/cabbage.png");
     }
 
     .vegetablesImage {
-        @include hoverImage("/pictures/vegetables.png");
+        @include hoverImage("pictures/vegetables.png");
     }
 
     .stairsImage {
-        @include hoverImage("/pictures/stairs.png", 360px);
+        @include hoverImage("pictures/stairs.png", 360px);
     }
 
-     @media (max-width:700px) { 
-         height: unset;
-         flex-direction: column;
-         .tabButtonGroup {
-             display: flex;
-             margin: 20px 0px;
-             .tabButton {
-                 margin: 0px 10px;
-             }
-         }
-         .textPart {
-             width: fit-content;
-             margin: 20px;
-             h1 {
-                 margin-top: 0px;
-             }
-         }
-         .gridContainer {
-             margin-bottom: 40px;
-         }
-     }
+    @media (max-width: 700px) {
+        height: unset;
+        flex-direction: column;
+        .tabButtonGroup {
+            display: flex;
+            margin: 20px 0px;
+            .tabButton {
+                margin: 0px 10px;
+            }
+        }
+        .textPart {
+            width: fit-content;
+            margin: 20px;
+            h1 {
+                margin-top: 0px;
+            }
+        }
+        .gridContainer {
+            margin-bottom: 40px;
+        }
+    }
 }
