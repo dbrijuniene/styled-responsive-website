@@ -101,7 +101,7 @@
         @include hoverImage("/pictures/stairs.png", 360px);
     }
 
-    .large {
-        width: 342px;
-    }
+     @media (max-width:700px) { 
+         
+     }
 }

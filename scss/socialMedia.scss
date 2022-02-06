@@ -1,7 +1,10 @@
 .socialMedia {
     display: flex;
     justify-content: space-evenly;
-    height: 105px;
+    
+    & > div {
+        height: 105px;
+    }
 
     h3 {
         font-size: $smallerTitle;
@@ -18,8 +21,7 @@
         width: 450px;
         text-align: left;
         line-height: $sameLineHeight;
-        margin:0;
-        margin-left: 30px;
+        margin:0 30px;
     }
 
     i {
@@ -31,4 +33,23 @@
         padding-right: 55px;
         margin-right: 20px;
     }
+
+     @media (max-width:700px) { 
+         flex-direction: column;
+         p {
+             width: fit-content;
+         }
+         & > div {
+             display: flex;
+             justify-content: center;
+
+             &:first-of-type {
+                 flex-direction: column;
+             }
+             
+             i {
+                 padding-right: 10px;
+                }
+            }
+     }
 }
