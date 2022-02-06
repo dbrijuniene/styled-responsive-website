@@ -102,6 +102,21 @@
     }
 
      @media (max-width:700px) { 
-         
+         height: unset;
+         flex-direction: column;
+         .tabButtonGroup {
+             display: flex;
+             margin: 20px 0px;
+             .tabButton {
+                 margin: 0px 10px;
+             }
+         }
+         .textPart {
+             width: fit-content;
+             margin: 20px;
+             h1 {
+                 margin-top: 0px;
+             }
+         }
      }
 }
