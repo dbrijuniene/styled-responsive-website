@@ -57,6 +57,12 @@
     }
 
     @media (max-width: 700px) {
+        .title {
+            & > p {
+                margin: auto 30px;
+            }
+        }
+
         .iconsContainer {
             display: flex;
             flex-direction: column;
@@ -65,8 +71,7 @@
         }
 
         p {
-            width: 500px;
-         
+            width: fit-content;
         }
     }
 }
