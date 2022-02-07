@@ -15,3 +15,11 @@ for (const a of actions) {
 burger.addEventListener("click", function () {
     navigationPanel.classList.toggle("expandet")
 })
+
+var requiredInputs = document.getElementsByTagName("input");
+
+for (const input of requiredInputs) {
+    input.addEventListener("invalid", function () {
+        alert(`Error, please fill ${input.placeholder} field.`);
+    }, false);
+}
